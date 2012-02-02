@@ -37,6 +37,12 @@ function bool CheckReplacement(Actor Other, out byte bSuperRelevant) {
             ReplaceWith(Other,String(class<Pickup>(pickupReplaceArray[index].newClass).default.InventoryType));
             return false;
         }
+    } else if (KFAmmoPickup(Other) != none) {
+        index= shouldReplace(String(KFWeapon(Other).PickupClass.class), ammoReplaceArray);
+        if (index != -1) {
+            ReplaceWith(Other,String(class<Pickup>(ammoReplaceArray[index].newClass).default.InventoryType));
+            return false;
+        }
     }
     return true;
 }
@@ -73,6 +79,6 @@ defaultproperties {
     pickupReplaceArray(8)=(oldClass=class'KFMod.MP7MPickup',newClass=class'SGWeaponsPack.MP7MPickup',bReplace=true)
     pickupReplaceArray(9)=(oldClass=class'KFMod.MP5MPickup',newClass=class'SGWeaponsPack.MP5MPickup',bReplace=true)
 
-    ammoReplaceArray(0)=(oldClass=class'KFMod.ChainsawAmmo',newClass=class'SGWeaponsPack.ChainsawAmmo',bReplace=true)
+    ammoReplaceArray(0)=(oldClass=class'KFMod.ChainsawAmmoPickup',newClass=class'SGWeaponsPack.ChainsawAmmoPickup',bReplace=true)
 
 }
