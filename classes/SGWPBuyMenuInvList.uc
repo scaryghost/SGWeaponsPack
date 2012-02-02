@@ -108,7 +108,7 @@ function UpdateMyBuyables() {
                 MyBuyable.ItemSpeed         = MyPickup.default.SpeedValue;
                 MyBuyable.ItemAmmoCurrent   = CurAmmo;
                 MyBuyable.ItemAmmoMax       = MaxAmmo;
-                MyBuyable.bMelee            = (KFMeleeGun(CurInv) != none);
+                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon;
                 MyBuyable.bSaleList         = false;
                 MyBuyable.ItemPerkIndex     = MyPickup.default.CorrespondingPerkIndex;
 
@@ -150,7 +150,7 @@ function UpdateMyBuyables() {
                 MyBuyable.ItemSpeed         = MyPickup.default.SpeedValue;
                 MyBuyable.ItemAmmoCurrent   = CurAmmo;
                 MyBuyable.ItemAmmoMax       = MaxAmmo;
-                MyBuyable.bMelee            = (KFMeleeGun(CurInv) != none);
+                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon;
                 MyBuyable.bSaleList         = false;
                 MyBuyable.ItemPerkIndex     = MyPickup.default.CorrespondingPerkIndex;
 
