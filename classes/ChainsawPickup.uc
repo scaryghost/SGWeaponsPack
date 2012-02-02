@@ -5,7 +5,7 @@ defaultproperties {
     cost= 2500;
 
     /** Set up fuel for the chainsaw */
-    AmmoCost= 15;
+    AmmoCost= 300;
     BuyClipSize= 100;
     AmmoItemName= "Chainsaw fuel";
 

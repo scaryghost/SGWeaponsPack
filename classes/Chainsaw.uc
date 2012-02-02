@@ -4,7 +4,7 @@ defaultproperties {
     bAmmoHUDAsBar= true;
     bConsumesPhysicalAmmo= true;
     bMeleeWeapon= false;
-    MagCapacity= 100;
+    MagCapacity= 750;
     bShowChargingBar= true;
 
     FireModeClass(0)=class'SGWeaponsPack.ChainsawFire'

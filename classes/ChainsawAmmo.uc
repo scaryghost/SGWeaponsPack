@@ -6,6 +6,6 @@ defaultproperties {
 
     /** Set up "fuel" for the chainsaw */
     AmmoPickupAmount=100
-    MaxAmmo= 1500;
-    InitialAmount= 1500;
+    MaxAmmo= 750;
+    InitialAmount= 750;
 }
