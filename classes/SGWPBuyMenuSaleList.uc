@@ -87,7 +87,7 @@ function UpdateForSaleBuyables() {
 
         if ( bZeroWeight)
             ForSaleBuyable.ItemWeight   = 0.f;
-        else if (KFCBHumanPawn(KFCBPlayerController(PlayerOwner()).Pawn).hasWeaponInInventory(class'SGWeaponsPack.Magnum44Pistol')
+        else if (SGWPHumanPawn(SGWPPlayerController(PlayerOwner()).Pawn).hasWeaponInInventory(class'SGWeaponsPack.Magnum44Pistol')
                 && ForSalePickup == class'SGWeaponsPack.Dual44MagnumPickup')
         /**
          *  Added this so dual magnums would only add 2 blocks if the 

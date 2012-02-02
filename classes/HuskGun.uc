@@ -19,7 +19,7 @@ simulated function Tick(float delta) {
         } else if (bIsInCoolDown) {
             msgTimer-= delta;
             if (msgTimer <= 0) {
-                PlayerController(KFCBHumanPawn(Owner).Controller).ReceiveLocalizedMessage(class'HuskGunOverHeatMessage');
+                PlayerController(SGWPHumanPawn(Owner).Controller).ReceiveLocalizedMessage(class'HuskGunOverHeatMessage');
                 msgTimer= class'HuskGunOverHeatMessage'.default.LifeTime;
             }
         }
