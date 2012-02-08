@@ -31,8 +31,8 @@ simulated function OutOfAmmo() {
 }
 
 defaultproperties {
-    ammoRegenRate= 1.0
-    coolDownLimit= 10
+    ammoRegenRate= 10.0
+    coolDownLimit= 75
     FireModEClass(0)=class'SGWeaponsPack.HuskGunFire'
     PickupClass=class'SGWeaponsPack.HuskGunPickup'
     ItemName="SG HuskGun"

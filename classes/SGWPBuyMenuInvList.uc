@@ -108,7 +108,7 @@ function UpdateMyBuyables() {
                 MyBuyable.ItemSpeed         = MyPickup.default.SpeedValue;
                 MyBuyable.ItemAmmoCurrent   = CurAmmo;
                 MyBuyable.ItemAmmoMax       = MaxAmmo;
-                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon;
+                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon || HuskGun(CurInv) != none;
                 MyBuyable.bSaleList         = false;
                 MyBuyable.ItemPerkIndex     = MyPickup.default.CorrespondingPerkIndex;
 
@@ -150,7 +150,7 @@ function UpdateMyBuyables() {
                 MyBuyable.ItemSpeed         = MyPickup.default.SpeedValue;
                 MyBuyable.ItemAmmoCurrent   = CurAmmo;
                 MyBuyable.ItemAmmoMax       = MaxAmmo;
-                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon;
+                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon || HuskGun(CurInv) != none;
                 MyBuyable.bSaleList         = false;
                 MyBuyable.ItemPerkIndex     = MyPickup.default.CorrespondingPerkIndex;
 
@@ -189,9 +189,12 @@ function UpdateMyBuyables() {
                 MyBuyable.ItemAmmoMax       = MaxAmmo;
                 /**
                  *  Had to change this line to use the bMeleeWeapon variable
-                 *  so the Chainsaw's ammo would show up on the ammo list 
+                 *  so the Chainsaw's ammo would show up on the ammo list.
+                 *  Also removed HuskGun's ammo from the inventory list.  This is
+                 *  an extremely hackish way to do it but I chose to do it this way
+                 *  to avoid overloading DrawInvItem
                  */
-                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon;
+                MyBuyable.bMelee            = KFWeapon(CurInv).bMeleeWeapon || HuskGun(CurInv) != none;
                 MyBuyable.bSaleList         = false;
                 MyBuyable.ItemPerkIndex     = MyPickup.default.CorrespondingPerkIndex;
 

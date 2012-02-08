@@ -1,6 +1,7 @@
 class HuskGunFire extends KFMod.HuskGunFire;
 
-var float maxAmmoConsumed;
+var float ammoConsumedScale;
+var float baseAmmoConsumed;
 
 event ModeDoFire() {
     local float Rec;
@@ -36,10 +37,10 @@ event ModeDoFire() {
     // server
     if (Weapon.Role == ROLE_Authority) {
         if( HoldTime < MaxChargeTime ) {
-            AmmoAmountToUse = (HoldTime/MaxChargeTime)*maxAmmoConsumed;// 10 ammo for full charge, at least 1 ammo used
+            AmmoAmountToUse = baseAmmoConsumed+(HoldTime/MaxChargeTime)*ammoConsumedScale;
         }
         else {
-            AmmoAmountToUse = maxAmmoConsumed;// 10 ammo for full charge, at least 1 ammo used
+            AmmoAmountToUse = baseAmmoConsumed + ammoConsumedScale;
         }
 
         if( Weapon.AmmoAmount(ThisModeNum) < AmmoAmountToUse ) {
@@ -105,5 +106,6 @@ simulated function bool AllowFire() {
 }
 
 defaultproperties {
-    maxAmmoConsumed= 50
+    ammoConsumedScale= 40
+    baseAmmoConsumed= 30
 }
