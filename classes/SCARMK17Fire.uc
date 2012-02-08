@@ -72,10 +72,10 @@ function DoTrace(Vector Start, Rotator Dir) {
                 }
                 Other.TakeDamage(int(HitDamage), Instigator, HitLocation, Momentum*X, DamageType);
             }
-            if( (HCounter++)>=4 || Pawn(DamageActor)==None ) {
+            if( (HCounter++)>=4 || Pawn(DamageActor)==None) {
                 Break;
             }
-            HitDamage/=2;
+            HitDamage/=3;
             Start = HitLocation;
         }
         else if ( HitScanBlockingVolume(Other)==None ) {
