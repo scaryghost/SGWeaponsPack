@@ -18,4 +18,7 @@ static function AddDefaultInventory(KFPlayerReplicationInfo KFPRI, Pawn P) {
 
 defaultproperties {
     VeterancyName="Zerk"
+
+    SRLevelEffects(5)="100% extra melee damage|20% faster melee attacks|20% faster melee movement|75% less damage from Bloat Bile|30% resistance to all damage|60% discount on Katana/Chainsaw/Sword|Spawn with an axe|Can't be grabbed by Clots|Up to 4 Zed-Time Extensions"
+    SRLevelEffects(6)="100% extra melee damage|25% faster melee attacks|30% faster melee movement|80% less damage from Bloat Bile|40% resistance to all damage|70% discount on Katana/Chainsaw/Sword|Spawn with a katana|Can't be grabbed by Clots|Up to 4 Zed-Time Extensions"
 }
