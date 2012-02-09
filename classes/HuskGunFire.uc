@@ -108,4 +108,6 @@ simulated function bool AllowFire() {
 defaultproperties {
     ammoConsumedScale= 40
     baseAmmoConsumed= 30
+
+    AmmoClass=class'SGWeaponsPack.HuskGunAmmo'
 }

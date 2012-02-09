@@ -7,7 +7,7 @@ var bool bIsInCoolDown;
 simulated function Tick(float delta) {
     super.Tick(delta);
 
-    if ( AmmoAmount(0) < Ammo[0].MaxAmmo) {
+    if ( AmmoAmount(0) < MaxAmmo(0)) {
         ammoRegenCount+= (delta * ammoRegenRate);
         ConsumeAmmo(0, -1*(ammoRegenCount));
         ammoRegenCount-= int(ammoRegenCount);
