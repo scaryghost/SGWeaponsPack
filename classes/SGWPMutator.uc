@@ -80,5 +80,6 @@ defaultproperties {
     pickupReplaceArray(9)=(oldClass=class'KFMod.MP5MPickup',newClass=class'SGWeaponsPack.MP5MPickup',bReplace=true)
 
     ammoReplaceArray(0)=(oldClass=class'KFMod.ChainsawAmmoPickup',newClass=class'SGWeaponsPack.ChainsawAmmoPickup',bReplace=true)
+    ammoReplaceArray(1)=(oldClass=class'KFMod.HuskGunAmmoPickup',newClass=class'SGWeaponsPack.HuskGunAmmoPickup',bReplace=true)
 
 }
