@@ -9,7 +9,5 @@ defaultproperties {
     BuyClipSize= 100;
     AmmoItemName= "Chainsaw fuel";
 
-    ItemName="SG Chainsaw"
-    ItemShortName="SG Chainsaw"
     InventoryType=class'SGWeaponsPack.Chainsaw'
 }

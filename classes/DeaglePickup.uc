@@ -51,7 +51,5 @@ function bool CheckCanCarry(KFHumanPawn Hm) {
 }
 
 defaultproperties {
-    ItemName="SG Handcannon"
-    ItemShortName="SG Handcannon"
     InventoryType=class'SGWeaponsPack.Deagle'
 }

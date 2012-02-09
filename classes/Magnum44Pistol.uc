@@ -10,6 +10,5 @@ simulated function bool PutDown() {
 
 defaultproperties {
     Weight=2.000000
-    ItemName="SG 44 Magnum"
     PickupClass=Class'SGWeaponsPack.Magnum44Pickup'
 }

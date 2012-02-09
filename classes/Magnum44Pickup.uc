@@ -19,7 +19,5 @@ function inventory SpawnCopy( pawn Other ) {
 }
 
 defaultproperties {
-    ItemName="SG 44 Magnum"
-    ItemShortName="SG 44 Magnum"
     InventoryType=Class'SGWeaponsPack.Magnum44Pistol'
 }

@@ -11,5 +11,4 @@ defaultproperties {
     FireModeClass(1)=class'SGWeaponsPack.ChainsawAltFire'
 
     PickupClass=class'SGWeaponsPack.ChainsawPickup'
-    ItemName="SG Chainsaw"
 }

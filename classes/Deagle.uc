@@ -9,6 +9,5 @@ simulated function bool PutDown() {
 }
 
 defaultproperties {
-    ItemName="SG Handcannon"
     PickupClass=class'SGWeaponsPack.DeaglePickup'
 }

@@ -69,5 +69,4 @@ simulated function bool PutDown() {
 
 defaultproperties {
     PickupClass=class'SGWeaponsPack.Dual44MagnumPickup'
-    ItemName="SG Dual 44 Magnums"
 }

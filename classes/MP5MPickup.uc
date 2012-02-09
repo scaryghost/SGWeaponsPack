@@ -117,7 +117,5 @@ state FadeOut {
 }
 
 defaultproperties {
-    ItemName="SG MP5M Medic Gun"
-    ItemShortName="SG MP5M Medic Gun"
     InventoryType=class'SGWeaponsPack.MP5MMedicGun'
 }

@@ -35,5 +35,4 @@ defaultproperties {
     coolDownLimit= 75
     FireModEClass(0)=class'SGWeaponsPack.HuskGunFire'
     PickupClass=class'SGWeaponsPack.HuskGunPickup'
-    ItemName="SG HuskGun"
 }
