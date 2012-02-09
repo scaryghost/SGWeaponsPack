@@ -1,0 +1,32 @@
+Author:
+Scary Ghost
+
+Install:
+Copy the contents into the system folder to your Killing Floor system folder.
+
+Usage:
+The SGWeaponsPack mutator is designed to be used with Marco's Server Side 
+Perks mutator.  You can download that mutator here:
+http://forums.tripwireinteractive.com/showthread.php?t=36065
+
+To recieve perk bonuses with the custom weapons, add the following perks 
+to the ServerPerks ini file.  The perks names are slightly altered from 
+the base perks so you differentiate the two sets.
+
+    Perks=SGWeaponsPack.BaseVetSupport
+    Perks=SGWeaponsPack.BaseVetBerserker
+    Perks=SGWeaponsPack.BaseVetCommando
+    Perks=SGWeaponsPack.BaseVetFieldMedic
+    Perks=SGWeaponsPack.BaseVetFirebug
+    Perks=SGWeaponsPack.BaseVetSharpshooter
+    Perks=SGWeaponsPack.BaseVetDemolitions
+
+The mutator will automatically replace the stock weapons with the custom 
+ones.  This includes the random drops and the trader list.  You DO NOT NEED 
+to add the custom weapons to the trader list in the ServerPerks ini file.
+
+Source code:
+https://github.com/scaryghost/SGWeaponsPack
+
+List of changes:
+https://github.com/scaryghost/SGWeaponsPack/wiki
