@@ -80,6 +80,7 @@ defaultproperties {
     pickupReplaceArray(9)=(oldClass=class'KFMod.MP5MPickup',newClass=class'SGWeaponsPack.MP5MPickup',bReplace=true)
     pickupReplaceArray(10)=(oldClass=class'KFMod.BenelliPickup',newClass=class'SGWeaponsPack.BenelliPickup',bReplace=true)
     pickupReplaceArray(11)=(oldClass=class'KFMod.BoomStickPickup',newClass=class'SGWeaponsPack.BoomStickPickup',bReplace=true)
+    pickupReplaceArray(12)=(oldClass=class'KFMod.CrossbowPickup',newClass=class'SGWeaponsPack.CrossbowPickup',bReplace=true)
 
     ammoReplaceArray(0)=(oldClass=class'KFMod.ChainsawAmmoPickup',newClass=class'SGWeaponsPack.ChainsawAmmoPickup',bReplace=true)
     ammoReplaceArray(1)=(oldClass=class'KFMod.HuskGunAmmoPickup',newClass=class'SGWeaponsPack.HuskGunAmmoPickup',bReplace=true)
